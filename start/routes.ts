@@ -29,6 +29,7 @@ Route.resource('posts', 'PostsController').apiOnly()
 //todos
 Route.group(() => {
 
+
   Route.post("register", "AuthController.register");
   Route.post("login", "AuthController.login");
 

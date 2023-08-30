@@ -34,6 +34,7 @@ export default class User extends BaseModel {
   @hasMany(() => Todo)
   public todos: HasMany<typeof Todo>;
 
+  
   @beforeSave()
   public static async hashPassword(user: User) {
     if (user.$dirty.password) {
