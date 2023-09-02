@@ -10,7 +10,7 @@ export default class Todos extends BaseSchema {
             .integer('user_id')
             .unsigned()
             .references('users.id')
-            .onDelete('CASCADE'); // delete post when user is deleted
+            .onDelete('CASCADE'); 
             table.string("title", 255).notNullable();
             table.string("desc", 255).notNullable();
             table.boolean("done").defaultTo(false);
